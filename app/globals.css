@@ -13,3 +13,5 @@
 @media(max-width:1050px){.mapframe{height:520px}}@media(max-width:620px){.mapframe{height:410px}.mapchips{max-width:90%}}
 
 .maplibrehost{width:100%;height:100%;z-index:1}.maplibrehost .maplibregl-canvas-container,.maplibrehost .maplibregl-canvas{width:100%;height:100%}.maplibrehost .maplibregl-control-container{position:relative;z-index:6}
+
+.viewmodes{display:flex;gap:7px;margin-bottom:12px}.viewmodes button{border:1px solid #214668;background:#08182b;color:#8ca8c8;border-radius:10px;padding:10px 14px}.viewmodes button.on{background:#11669b;color:white;border-color:#36a9dd}.satmarker{border:0;background:transparent;padding:7px}.satmarker i{display:block;width:7px;height:7px;transform:rotate(45deg);background:#b9f5ff;border:1px solid #fff;box-shadow:0 0 10px #66e7ff,0 0 22px #3bcfff}.mapframe:has(.satmarker){background:radial-gradient(circle,#10223d,#020610)}

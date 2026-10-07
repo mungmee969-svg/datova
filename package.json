@@ -12,7 +12,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "lucide-react": "^0.468.0",
-    "maplibre-gl": "^5.7.1"
+    "maplibre-gl": "^6.13.0",
+    "satellite.js": "^6.0.1"
   },
   "devDependencies": {
     "typescript": "^5.7.0",

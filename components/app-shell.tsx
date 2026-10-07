@@ -1,0 +1,6 @@
+'use client';
+import Link from 'next/link';
+import {usePathname} from 'next/navigation';
+import {Globe2,MapPin,TrendingUp,Ship,CloudRain,Newspaper,Cpu,Video,BrainCircuit,UserRound,LayoutDashboard,ShieldCheck} from 'lucide-react';
+const nav=[['/','ภาพรวม',Globe2],['/world','แผนที่โลก',MapPin],['/markets','ตลาดและเศรษฐกิจ',TrendingUp],['/trade','นำเข้า–ส่งออก',Ship],['/disaster','ภัยพิบัติ',CloudRain],['/news','ข่าวโลก',Newspaper],['/technology','เทคโนโลยี',Cpu],['/cameras','กล้องสาธารณะ',Video],['/intelligence','AI วิเคราะห์',BrainCircuit],['/my-dashboard','แดชบอร์ดของฉัน',LayoutDashboard],['/profile','โปรไฟล์ธุรกิจ',UserRound]] as const;
+export default function AppShell({children}:{children:React.ReactNode}){const p=usePathname();return <div className="shell"><aside className="sidebar"><Link href="/" className="brand"><div className="brandmark">D</div><div><strong>DATOVA</strong><small>WORLD DATA INTELLIGENCE</small></div></Link><div className="navlabel">GLOBAL INTELLIGENCE</div><nav>{nav.map(([href,label,Icon])=><Link key={href} href={href} className={p===href?'selected':''}><Icon size={17}/><span>{label}</span></Link>)}</nav><div className="sidebarfoot"><ShieldCheck size={16}/> PUBLIC DATA ONLY<br/><span>ข้อมูลสดต้องมีต้นทางและเวลาอัปเดต</span></div></aside><main>{children}</main></div>}

@@ -1,0 +1,3 @@
+import {NextResponse} from 'next/server';
+export const dynamic='force-dynamic';
+export async function GET(){try{const u='https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json';const r=await fetch(u,{next:{revalidate:3600},headers:{'User-Agent':'DATOVA/0.1 public-data-client'}});if(!r.ok)throw Error('upstream');const data=await r.json();return NextResponse.json({source:'CelesTrak GP',fetchedAt:new Date().toISOString(),objects:data})}catch{return NextResponse.json({error:'celestrak_unavailable'},{status:503})}}

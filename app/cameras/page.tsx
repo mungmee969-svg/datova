@@ -1,0 +1,1 @@
+import {SectionPage,Coming} from '../../components/section-page';export default function Page(){return <SectionPage eyebrow="PUBLIC CAMERA NETWORK" title="กล้องสาธารณะ" description="ใช้เฉพาะกล้องสาธารณะที่เจ้าของอนุญาตให้เข้าถึงหรือฝังสตรีม"><Coming items={['กล้องจราจร','กล้องสภาพอากาศ','กล้องท่องเที่ยว','Multi-camera view']}/></SectionPage>}

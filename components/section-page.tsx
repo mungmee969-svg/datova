@@ -1,0 +1,3 @@
+import {ReactNode} from 'react';
+export function SectionPage({eyebrow,title,description,children}:{eyebrow:string,title:string,description:string,children?:ReactNode}){return <><header><div><div className="eyebrow">{eyebrow}</div><h1>{title}</h1><p>{description}</p></div><div className="status"><span className="dot"/> DATOVA</div></header>{children}</>}
+export function Coming({items}:{items:string[]}){return <section className="content single"><div className="panel"><div className="eyebrow">MODULE ROADMAP</div><h3>ขอบเขตของหน้านี้</h3><div className="directory">{items.map(x=><div className="roaditem" key={x}><strong>{x}</strong><small>จะเปิด LIVE เมื่อเชื่อมแหล่งข้อมูลสาธารณะที่ตรวจสอบสิทธิ์แล้ว</small></div>)}</div></div></section>}

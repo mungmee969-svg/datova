@@ -1,0 +1,1 @@
+import {SectionPage,Coming} from '../../components/section-page';export default function Page(){return <SectionPage eyebrow="TECH INTELLIGENCE" title="เทคโนโลยี" description="AI ชิป Data Center งานวิจัย และเทคโนโลยีที่อาจเปลี่ยนธุรกิจ"><Coming items={['AI และโมเดลใหม่','Semiconductor','Data Center & Cloud','งานวิจัยและเทคโนโลยีเกิดใหม่']}/></SectionPage>}

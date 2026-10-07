@@ -1,0 +1,1 @@
+import {SectionPage,Coming} from '../../components/section-page';export default function Page(){return <SectionPage eyebrow="GLOBAL NEWS" title="ข่าวโลก" description="รวบรวมเหตุการณ์สำคัญ เชื่อมโยงหลายแหล่ง และแยกข่าวออกจากบทวิเคราะห์"><Coming items={['ข่าวเศรษฐกิจ','ภูมิรัฐศาสตร์','ธุรกิจและการค้า','AI สรุปผลกระทบต่อไทย']}/></SectionPage>}

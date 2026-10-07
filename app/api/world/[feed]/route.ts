@@ -1,6 +1,6 @@
 import {NextRequest,NextResponse} from 'next/server';
 export const dynamic='force-dynamic';
-const allowed=new Set(['flights','maritime','fires','weather','gdelt']);
+const allowed=new Set(['flights','maritime','fires','weather','gdelt','satellites','space-weather','air-quality','cctv','infrastructure','conflicts','frontlines','country-risk','news','markets','crypto']);
 export async function GET(req:NextRequest,{params}:{params:Promise<{feed:string}>}){
  const {feed}=await params;if(!allowed.has(feed))return NextResponse.json({error:'unsupported_feed'},{status:404});
  try{const upstream=await fetch(`https://osirisai.live/api/${feed}`,{headers:{'User-Agent':'DATOVA/0.1 intelligence-research'},next:{revalidate:60}});

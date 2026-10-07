@@ -1,0 +1,1 @@
+import {SectionPage,Coming} from '../../components/section-page';export default function Page(){return <SectionPage eyebrow="MARKET INTELLIGENCE" title="ตลาดและเศรษฐกิจ" description="หุ้น ทอง ค่าเงิน และตัวชี้วัดเศรษฐกิจ โดยไม่แสดงราคาจำลองเป็นข้อมูลสด"><Coming items={['ทองคำและโลหะมีค่า','USD/THB และ FX','SET และตลาดโลก','ดอกเบี้ย เงินเฟ้อ GDP']}/></SectionPage>}
